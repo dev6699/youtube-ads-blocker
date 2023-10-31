@@ -10,14 +10,9 @@ setInterval(() => {
   }
 
   const ad = document.querySelector('.video-ads.ytp-ad-module')
-  if (ad && ad.children.length > 1) {
-    // "Video will play after ads" text
-    const skipText = document.querySelector('.ytp-ad-text.ytp-ad-preview-text')
-    if (!skipText) {
-      // speed up video playback if skip button not shown
-      vid.playbackRate = 16
-      vid.muted = true;
-    }
+  if (ad && ad.children.length > 0) {
+    vid.playbackRate = 16
+    vid.muted = true;
   }
 
   const rightTopAd = document.querySelector('ytd-companion-slot-renderer')
