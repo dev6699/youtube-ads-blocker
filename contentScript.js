@@ -4,7 +4,7 @@ setInterval(() => {
     return
   }
 
-  const skipBtn = document.querySelector('.ytp-ad-text.ytp-ad-skip-button-text')
+  const skipBtn = document.querySelector('.ytp-skip-ad-button')
   if (skipBtn) {
     skipBtn.click()
   }
